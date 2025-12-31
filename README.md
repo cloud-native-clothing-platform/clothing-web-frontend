@@ -1,2 +1,17 @@
-# clothing-web-frontend
-Web-based user interface for the online clothing platform. Provides product browsing, cart management, checkout, and order tracking experiences for customers.
+# Clothing Web Frontend
+
+Frontend application for the Cloud-Native Clothing Platform.
+
+## Stack
+- React
+- Vite
+- Docker
+- Nginx
+- GitHub Actions
+
+## Environment
+- Dev: EKS
+- Registry: Amazon ECR
+
+## Status
+🚧 In Progress
