@@ -1,0 +1,17 @@
+name: Frontend CI
+on:
+  pull_request:
+    branches: [develop, main]
+  push:
+    branches: [develop]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify required frontend files
+        run: test -s index.html && test -s Dockerfile
+      - name: Build container
+        run: docker build -t clothing-web-frontend:test .
